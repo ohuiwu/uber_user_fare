@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split
 
 dat = pd.read_pickle("../../data/external/external.pkl")
 
-
-
 # split the data into train and test
 X = dat.drop('fare_amount', axis=1)
 y = dat['fare_amount']
